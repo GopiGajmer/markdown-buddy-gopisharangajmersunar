@@ -1,0 +1,45 @@
+---
+title: "Regional Sales Analysis: Script Documentation"
+author: "Gopi Sharan Gajmer Sunar"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+**AI Assistance Declaration**: I used ChatGPT (GPT-5.6 Luna) on October 2, 2026 for suggesting Markdown formatting and code block examples. Prompts used: see Appendix.md. I verified outputs using RStudio's knit preview and by running the code myself. All final calculations are done by myself. I am responsible for the accuracy and originality of this work.
+
+# Purpose
+
+This document explains the R script that summarizes synthetic sales data by region. It creates fake sales records for four regions, calculates the average sales for each region, and draws a bar chart.
+
+## Inputs
+
+- No external files are needed. The data is generated inside the script.
+- `set.seed(123)` makes the random data the same every time.
+- Required package: `ggplot2`.
+
+## Code
+
+```{r analysis, message=FALSE}
+library(ggplot2)
+
+# Generate synthetic sales data
+set.seed(123)
+sales <- data.frame(
+  region = sample(c("North", "South", "East", "West"), 100, replace = TRUE),
+  amount = round(runif(100, 50, 500), 2)
+)
+
+# Calculate average sales by region
+avg_sales <- aggregate(amount ~ region, data = sales, FUN = mean)
+print(avg_sales)
+
+# Create bar chart
+ggplot(avg_sales, aes(x = region, y = amount)) +
+  geom_col(fill = "steelblue") +
+  labs(title = "Average Sales by Region", x = "Region", y = "Average Amount")
+```
+
+## Outputs
+
+- A table showing the average sales for each region.
+- A bar chart comparing average sales across the four regions.
