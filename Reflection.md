@@ -1,0 +1,15 @@
+**AI Assistance Declaration**: I used ChatGPT (GPT-5.6 Luna) on October 2, 2026 for drafting README content and Markdown formatting suggestions, and Claude for step-by-step guidance and help drafting this reflection. Prompts used: see Appendix.md. I verified outputs using GitHub's Markdown preview, knitting the .Rmd in Posit Cloud, and comparing against the tidyverse README. All final calculations are done by myself. I am responsible for the accuracy and originality of this work.
+
+# Reflection
+
+## Question 1: How did AI support your documentation process, and what were its strengths?
+
+AI helped me get a complete, well-organized README draft much faster than I could have written one from scratch. When I asked ChatGPT what a good R project README should include, it gave me a clear list of sections, including ones I had not thought of, such as Limitations and Reproducibility. It also showed me how Markdown headings, bullet lists, and code blocks work together in a real document. Because I am new to Markdown and R Markdown, seeing working examples helped me understand the structure before I wrote my own version. The refinement prompts were useful because each one improved the same draft step by step instead of starting over.
+
+## Question 2: What weaknesses or errors did you find in the AI output, and how did you verify and fix them?
+
+The AI output had several mistakes that I only found by reading it carefully. In the first answer, ChatGPT left a code block unclosed, and when I asked it to check the Markdown syntax, it said the structure was correct and did not catch the error. In the README draft, it listed `analysis.R` in the file list even though my repository only contains `analysis.Rmd`, and its example code used different variable names from my script. It also repeated information across the Analysis, Results, and Visualization sections, and its License section mentioned a license file that does not exist in my repository. I verified the work by previewing the README on GitHub, knitting `analysis.Rmd` in Posit Cloud, running the code myself, and comparing the structure with a real tidyverse README. I then fixed these problems by merging the overlapping sections, rewriting the license wording, replacing the example code with my own, and correcting the file list and run steps.
+
+## Question 3: How did you use AI ethically, and how will you use AI for documentation in the future?
+
+I used AI as a writing and design assistant, not as a replacement for my own work. I used only synthetic data, so no real or personal information was shared with any AI tool. I recorded every prompt and key response in Appendix.md, added the AI Assistance Declaration to each file, and described the changes I made in the README disclosure section. I did not copy any output without checking it, because the errors I found showed me that AI can sound confident and still be wrong. In the future, I will use AI to create first drafts and suggest structure, but I will always test the code, preview the formatting, and compare the result with the real files before sharing it.
