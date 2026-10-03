@@ -5,7 +5,7 @@ date: "`r Sys.Date()`"
 output: html_document
 ---
 
-**AI Assistance Declaration**: I used ChatGPT (GPT-5.6 Luna) on October 2, 2026 for suggesting Markdown formatting and code block examples. Prompts used: see Appendix.md. I verified outputs using RStudio's knit preview and by running the code myself. All final calculations are done by myself. I am responsible for the accuracy and originality of this work.
+**AI Assistance Declaration**: I used ChatGPT (GPT-5.6 Luna) on October 2, 2026 for suggesting Markdown formatting and code block examples, and Claude for step-by-step guidance and help drafting this document. Prompts used: see Appendix.md. I verified outputs using RStudio's knit preview and by running the code myself. All final calculations are done by myself. I am responsible for the accuracy and originality of this work.
 
 # Purpose
 
